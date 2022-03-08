@@ -1,6 +1,2 @@
 [all]
-52.140.45.162 
-[all:vars]
-ansible_connection=ssh 
-ansible_user=Neelam-zanvar 
-ansible_ssh_pass=#Crazzyworld123
+20.41.233.125
