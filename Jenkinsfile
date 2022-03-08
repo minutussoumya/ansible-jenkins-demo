@@ -5,7 +5,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/Neelam-zanvar/ansible-neelam.git'
+                git branch: 'main', url: 'https://github.com/Neelam-zanvar/ansible-neelam.git'
              
           }
         }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                 
-               def tfHome = tool name: 'Ansible'
+               def tfHome = tool name: 'ansible2'
                 env.PATH = "${tfHome}:${env.PATH}"
                  sh 'ansible --version'
                     
